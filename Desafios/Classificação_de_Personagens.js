@@ -25,9 +25,6 @@ Entrada	Saída
 15 20	Mago
 Atenção: É extremamente importante que as entradas e saídas sejam exatamente iguais às descritas na descrição do desafio de código.
 
-Os desafios apresentados aqui têm como objetivo principal exercitar os conceitos aprendidos e proporcionar um primeiro contato com lógica de programação. 
-Caso não tenha experiência em programação, utilize o template disponível e preencha com os conceitos aprendidos. 
-Para resetar o template, basta clicar em “Restart Code”.
 */
 
 let valores = gets().split(" ");  
@@ -38,7 +35,22 @@ let classificacao = "";
 
 // TODO: Crie condições if/else para validação da classificação do personagem:
 
-
+if (forca > 0 && forca <= 15  && inteligencia > 0 && inteligencia < 15){
+    classificacao = "Aprendiz";
+    
+}
+if (forca >= 20 && inteligencia > 0 && inteligencia < 15){
+    classificacao = "Guerreiro";
+    
+}
+if (forca > 0 && forca < 20 && inteligencia >= 15){
+    classificacao = "Mago";
+    
+}
+if (forca >= 20 && inteligencia >= 15 ){
+    classificacao = "Arquimago";
+    
+}
 
 
 // Exibe o resultado
