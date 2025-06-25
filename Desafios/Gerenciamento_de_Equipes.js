@@ -84,13 +84,13 @@ while (true) {
     // TODO: Valide se o tipo é "Heroi" ou "Vilao", utilize condições if/else e acrescente o retorno de 'Tipo invalido':
 
     if (tipo == "Heroi"){
-        herois = nome;
+        herois.push(nome);
 
     } else if (tipo == "Vilao"){
-        heroi = nome;
+        viloes.push(nome);
 
     } else {
-        tipo = "Tipo inválido";
+        console.log("Tipo invalido");
     }
 }
 
