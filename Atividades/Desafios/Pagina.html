@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+
+    <style>
+      abbr {
+         color: chocolate;
+      }
+
+      mark {
+         background-color: rgba(210, 105, 30, 0.575);
+      }
+
+    </style>
+</head>
+<body>
+    <h1 id="inicio">Módulo 1<sub>web</sub> - Primeiros Passos com HTML</h1>
+    <hr />
+
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li><a href="#estrutura">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#acessibilidade">Acessibilidade na Web</a></li>
+        <li><a href="#listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#formulario">Formulários na Web</a></li>
+        <li><a href="#link">Links de referências</a></li>
+    </ul>
+
+    <hr />
+
+    <h2 id="servers">O que são <i>Servers</i>?</h2>
+    <p>Na área de desenvolvimento web, um <strong>servidor</strong> (<i>server</i>, em inglês) é um computador
+       ou sistema responsável por <strong>armazenar, processar e entregar páginas da web</strong>
+       aos usuários que as acessam por meio de navegadores. </p>
+
+    <p> <blockquote> Quando você cria um site com <abbr>HTML</abbr>, <abbr>CSS</abbr> e <abbr>JavaScript</abbr>, esses arquivos precisam estar 
+      em algum lugar acessível para outras pessoas na internet. Esse "lugar" é justamente o <strong><u>servidor</u></strong>.</blockquote> </p>
+
+
+    <h3>Como funciona?</h3>
+
+    
+      <ol> 
+         <li>O usuário digita o endereço de um site no navegador, como <mark>www.exemplo.com.</mark></li>
+         <li>Esse pedido é enviado a um servidor onde o site está hospedado.</li>
+         <li>O servidor localiza os arquivos do site (como o <mark>index.html</mark>) e os envia de volta ao <u>navegador</u>.</li>
+         <li>O navegador recebe o conteúdo e exibe a página para o usuário.</li>
+      </ol>
+
+    <h4>Tipos de servidores</h4>
+
+   
+      <ul>
+         <li><mark><strong>Servidor Web:</strong></mark> Responsável por entregar os arquivos da web (HTML, CSS, JS etc.).
+             Exemplos: Apache, Nginx.</li>
+         <li><mark><strong>Servidor de banco de dados:</strong></mark> Gerencia dados e responde a consultas feitas por sites ou aplicativos.</li>
+         <li><mark><strong>Servidor de aplicações:</strong></mark> Executa a lógica do site (como login, cadastro, etc.), 
+            normalmente com linguagens como PHP, Python, Node.js etc. </li>
+      </ul>
+
+    <h5>Resumo</h5>
+    <p><font color="Sienna">Um servidor é essencial para colocar um site no ar.</font> Ele funciona como um <i>"anfitrião"</i>
+       que envia os arquivos certos sempre que alguém acessa uma página da web.</p>
+
+    <small><a href="#inicio">(Voltar)</a></small>
+
+    <hr />
+    <h2 id="estrutura">Como é uma estrutura básica de um HTML?</h2>
+
+    <p>HTML é uma linguagem de <del>programação</del> <strong>marcação</strong>.</p>
+    <p>Um arquivo HTML é composto por uma estrutura padrão que organiza o conteúdo da página. Essa estrutura começa com a declaração
+       <abbr>&lt;!DOCTYPE html&gt;</abbr>, que informa ao navegador que o documento segue o padrão <stong>HTML5</stong>.</p>
+    <p>Em seguida, temos a tag <abbr>&lt;html&gt;</abbr>, que envolve todo o conteúdo da página. Dentro dela, há duas partes principais:</p>
+
+    
+      <ul>
+         <li><abbr>&lt;head&gt;</abbr>: é onde ficam informações invisíveis ao usuário, como o título da aba (<abbr>&lt;title&gt;</abbr>),
+             links para arquivos CSS, meta tags e scripts.</li>
+         <li><abbr>&lt;body&gt;</abbr>: contém o que será exibido na tela. Dentro do <abbr>&lt;body&gt;</abbr>, 
+            normalmente usamos três seções principais:
+            <ul>
+               <li><abbr>&lt;header&gt;</abbr>: área superior da página, geralmente com o logotipo, título ou menu de navegação.</li>
+               <li><abbr>&lt;main&gt;</abbr>: parte central do conteúdo, onde ficam os textos, imagens e informações principais da página.</li>
+               <li><abbr>&lt;footer&gt;</abbr>: rodapé da página, que costuma trazer contatos, direitos autorais e links adicionais.</li>
+            </ul>
+         </li>
+      </ul>
+
+    <p>Essa organização ajuda a manter o código limpo, semântico e mais fácil de entender tanto para desenvolvedores quanto para 
+      mecanismos de busca.<sup>1</sup></p>
+    <p><small><sup>1</sup>Por exemplo, o uso correto de tags semânticas melhora a indexação do site em motores de busca como o Google.</small></p>
+
+    <small><a href="#inicio">(Voltar)</a></small>
+
+    <hr />
+    <h2 id="acessibilidade">Acessibilidade na Web</h2>
+    <h6>Adicionar acessibilidade ao HTML não é complicado</h6>
+    <p>A <u><i>acessibilidade</i></u> é um dos pilares do desenvolvimento web moderno. Criar páginas acessíveis significa garantir que 
+      <strong>todas as pessoas</strong>, inclusive aquelas com deficiências visuais, auditivas, motoras ou cognitivas, 
+      possam navegar e <strong>compreender</strong> o conteúdo do site com facilidade.</p>
+
+    <blockquote>O HTML oferece diversos recursos que ajudam a tornar as páginas mais acessíveis. Alguns dos principais são:</blockquote>
+
+    <h3>Uso de tags semânticas</h3>
+
+    <p>Tags como (<abbr>&lt;header&gt;</abbr>, <abbr>&lt;main&gt;</abbr>, <abbr>&lt;footer&gt;</abbr>, etc.) 
+      ajudam leitores de tela e outros recursos assistivos a entender a estrutura da página e navegar por ela com mais facilidade.</p>
+
+    <h3>Atributo <abbr>alt</abbr> em imagens</h3>
+
+    <p>O atributo <abbr>alt</abbr> (texto alternativo) descreve o conteúdo de uma imagem. É essencial para pessoas que utilizam 
+      leitores de tela ou que não conseguem visualizar as imagens.</p>
+
+    <h3>Uso da tag <abbr>&lt;label&gt;</abbr> com formulários</h3>
+    <p>Associar rótulos (<abbr>&lt;label&gt;</abbr>) aos campos de formulário ajuda usuários com deficiências visuais 
+      a entenderem o que cada campo representa.</p>
+
+    <h3>Legendas e descrições em vídeos</h3>
+    <p>Além da tag <abbr>&lt;track&gt;</abbr> com arquivos <abbr>.vtt</abbr>. para legendas, também é importante fornecer audiodescrição 
+      e transcrições sempre que possível, ampliando o acesso para pessoas com deficiência visual ou auditiva.</p>
+
+    <h3>Uso correto de títulos (<abbr>&lt;h1&gt;</abbr> a <abbr>&lt;h6&gt;</abbr>)</h3>
+    <p>A hierarquia de títulos ajuda a organizar o conteúdo e permite que tecnologias assistivas naveguem facilmente por seções da página.</p>
+
+    <small><a href="#inicio">(Voltar)</a></small>
+
+
+    <hr />
+    <h2 id="listas">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+    
+    <p>No HTML, as <u><i>listas</i></u> são utilizadas para organizar informações de forma clara e estruturada. 
+      Existem dois tipos principais: <strong>listas ordenadas</strong> e <strong>listas não ordenadas</strong>, 
+      e cada uma serve para situações diferentes.</p>
+      
+         <ul>
+            <li><abbr>Lista ordenada</abbr> <p>A lista ordenada é usada quando a ordem dos itens importa, como em rankings, passo a passo ou instruções. 
+               Os itens são numerados automaticamente pelo navegador.</p></li>
+            <li><abbr>Lista não ordenada</abbr><p>A lista não ordenada é usada quando a ordem dos itens não é relevante, como em listas de características, 
+               tópicos ou ingredientes. Os itens são marcados com pontos (bolinhas) por padrão.</p></li>
+         </ul>
+
+      <h5>Resumo:</h5>
+      <ul>
+         <li>Use <abbr>&lt;ol&gt;</abbr> quando a sequência for importante.</li>
+         <li>Use <abbr>&lt;ul&gt;</abbr> para listar itens sem ordem específica.</li>
+      </ul>
+      <p>Ambas utilizam a tag <abbr>&lt;li&gt;</abbr> para definir cada item da lista.</p>
+      <p>Essas listas são simples, mas muito úteis para deixar o conteúdo mais organizado e acessível 
+         tanto para usuários quanto para tecnologias assistivas.</p>
+
+    <small><a href="#inicio">(Voltar)</a></small>
+
+    <hr />
+    <h2 id="formulario">Formulários na Web</h2>
+    <p>Os <strong>formulários em HTML</strong> são fundamentais para a interação entre o usuário e o site. 
+      É por meio deles que coletamos dados, como informações de login, cadastros, comentários, entre outros.</p>
+    <p>A estrutura básica de um formulário começa com a tag <abbr>&lt;form&gt;</abbr>, que agrupa todos os campos 
+      e define para onde os dados serão enviados.</p>
+   
+    <h3>Principais elementos de um formulário</h3>
+    <ul>
+      <li><abbr>&lt;input&gt;</abbr>: usado para diferentes tipos de entrada, como texto, e-mail, senha, data, etc.</li>
+      <li><abbr>&lt;label&gt;</abbr>: rótulo descritivo para cada campo, importante para acessibilidade.</li>
+      <li><abbr>&lt;textarea&gt;</abbr>: área para inserir textos longos, como mensagens ou descrições.</li>
+      <li><abbr>&lt;button&gt;</abbr> ou <abbr>&lt;input type="submit"&gt;</abbr>: usados para enviar o formulário.</li>
+    </ul>
+
+   
+    <h4>Agrupando campos com <abbr>&lt;fieldset&gt;</abbr> e <abbr>&lt;legend&gt;</abbr></h4>
+    <p>Para deixar o formulário mais organizado, podemos agrupar campos relacionados usando a tag <abbr>&lt;fieldset&gt;</abbr>. 
+      Dentro dela, usamos <abbr>&lt;legend&gt;</abbr> para dar um título a esse grupo de campos.</p>
+
+    <p>O uso de <abbr>&lt;form&gt;</abbr>, junto com elementos como <abbr>&lt;input&gt;</abbr>, <abbr>&lt;label&gt;</abbr>, 
+     <abbr>&lt;fieldset&gt;</abbr> e <abbr>&lt;legend&gt;</abbr>, permite criar formulários bem estruturados, 
+     acessíveis e fáceis de usar. Esses recursos tornam a experiência do usuário mais <u><i>intuitiva</i></u> e organizada.</p>
+
+    <small><a href="#inicio">(Voltar)</a></small>
+
+    <hr />
+    <h2 id="link">Links de referências</h2>
+    <ul>
+        <li><a href="https://web.dio.me/track/santander-2025-front-end" target="_blank">Bootcamp Front-End DIO</a></li>
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Structuring_content" target="_blank">Documentação MDN - HTML</a></li>
+    </ul>
+
+</body>
+</html>  
