@@ -1,0 +1,231 @@
+
+/* === Fontes === */
+@font-face {
+  font-family: 'Luckiest Guy';
+  src: url(Font/LuckiestGuy-Regular.ttf);
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+
+
+/* === Reset === */
+html, body, footer, header {
+	margin: 0;
+}
+
+
+
+/* === Estrutura Principal === */
+body {
+  font-family:'Open Sans', sans-serif;
+
+  flex-direction: column;
+  display: grid;
+  grid-template:
+      "header" 31.688rem
+      "main" auto
+      "footer" 7.5rem;
+  grid-template-columns: 1fr;
+  margin: 0;
+}
+
+html {
+  font-size: 1rem;
+}
+
+main {
+  display: block;
+
+  grid-area: main;
+  display: grid;
+  grid-template:
+      "section_One" 31.25rem
+      "section_Two" 31.25rem
+      "section_Three" 37.5rem
+      "section_Four" 48rem;
+  grid-template-columns: 1fr;
+}
+
+
+
+/* === Cabeçalho === */
+header {
+  grid-area: header;
+
+}
+
+h2{
+  font-weight: 800;
+  max-width: 21.875rem;
+  font-size: 2.5rem;
+}
+
+p {
+  font-weight: 400;
+  text-align: justify;
+  margin:1.25rem;
+}
+
+.banner {
+  background-image: url("images/header.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 31.688rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.banner-content {
+  text-align: center;
+  color: white;
+  max-width: 48.75rem;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+.banner-content h1 {
+  font-size: 3.125rem;
+  font-family: 'Luckiest Guy', sans-serif;
+  text-transform: uppercase;
+  margin: 0 auto 2.5rem;
+}
+
+.banner-content p {
+  justify-items: center;
+  line-height: 1.6;
+  max-width: 46.875rem;
+  text-align: center;
+  margin: 0 auto 2.5rem;
+}
+
+
+
+/* === Botões === */
+button {
+  border-radius: 6.25rem;
+  border: none;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  margin: 0.625rem;
+  cursor: pointer;
+}
+
+.download {
+  background-color: #FFFFFF;
+  color: #23272A;
+}
+
+.open {
+  background-color: #23272A;
+  color: #FFFFFF;
+}
+
+
+
+/* === Seções === */
+section.one {
+  grid-area: section_One;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.75rem;
+  padding: 3.125rem 5rem;
+}
+
+section.two {
+  grid-area: section_Two;
+  background-color: #F6F6F6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.75rem;
+  padding: 3.125rem 5rem;
+}
+
+section.three {
+  grid-area: section_Three;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.75rem;
+  padding: 3.125rem 5rem;
+}
+
+section.four {
+  grid-area: section_Four;
+  background-color: #F6F6F6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+
+/* === Conteúdo da Seção === */
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  max-width: 40rem;
+}
+
+.image-content img {
+  height: auto;
+}
+
+.text-content p {
+  max-width: 21.25rem;
+  margin: 0;
+  text-align: left;
+  line-height: 1.5;
+  color: #23272A;
+  margin-bottom: 2.5rem;
+}
+
+section.four img {
+  width: 56.25rem;
+}
+
+section.four h2 {
+  max-width: 38rem;
+  margin: 0 auto;
+  margin-top: 1.563rem;
+  font-family: 'Luckiest Guy', sans-serif;
+  letter-spacing: 0.125rem;
+}
+
+section.four p {
+  max-width: 50.125rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 1.25rem;
+}
+
+
+
+/* === Rodapé === */
+footer {
+  grid-area: footer;
+  background-color: #23272A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer img{
+  width: 16.25rem;
+  filter: brightness(50) contrast(100);
+}
