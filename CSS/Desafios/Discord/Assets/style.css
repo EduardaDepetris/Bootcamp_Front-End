@@ -1,4 +1,3 @@
-
 /* === Fontes === */
 @font-face {
   font-family: 'Luckiest Guy';
@@ -120,6 +119,10 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+ transform: scale(1.1);
+}
+
 .download {
   background-color: #FFFFFF;
   color: #23272A;
@@ -228,4 +231,119 @@ footer {
 footer img{
   width: 16.25rem;
   filter: brightness(50) contrast(100);
+}
+
+
+@media (max-width: 48rem) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header,
+  main,
+  footer {
+    width: 100%;
+  }
+
+  .banner {
+    height: auto;
+    padding: 2rem;
+    background-position: 70%;
+  }
+
+  .banner-content h1 {
+    font-size: 2rem;
+    text-align: left;
+    max-width: 12.5rem;
+    margin: 0;
+  }
+
+  .banner-content p {
+    padding: 0 1rem;
+    text-align: left;
+    margin-top: 1.875rem;
+    padding: 0;
+    max-width: 22.5rem;
+  }
+
+  button {
+    width: 22.5rem;
+    height: 3.75rem;
+    margin-left: 0;
+  }
+
+  section.one,
+  section.two,
+  section.three {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .text-content h2 {
+    text-align: left;
+    max-width: 25rem;
+  }
+
+  .text-content p {
+    text-align: left;
+    max-width: 23.438rem;
+  }
+
+  .image-content {
+    max-width: 100%;
+  }
+
+  .image-content img {
+    width: 100%;
+    height: auto;
+  }
+
+  section.four {
+    padding: 2rem;
+  }
+
+  section.four img {
+    width: 100%;
+  }
+
+  section.four h2 {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    max-width: 22.813rem;
+    letter-spacing: 0.063rem;
+  }
+
+  section.four p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.8rem 1rem;
+    width: 95%;
+  }
+
+  footer {
+    height: 6.25rem;
+  }
+
+  footer img {
+    width: 10rem;
+  }
+
 }
