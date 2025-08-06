@@ -44,7 +44,7 @@ main {
   grid-template:
       "section_One" 31.25rem
       "section_Two" 31.25rem
-      "section_Three" 37.5rem
+      "section_Three" 31.25rem
       "section_Four" 48rem;
   grid-template-columns: 1fr;
 }
