@@ -65,9 +65,9 @@ O objetivo é registrar o progresso no aprendizado e facilitar o acesso aos proj
 
 ### JavaCript - Tarefas
 
-- [1° Tarefa JS - Classificação de Personagens](https://github.com/EduardaDepetris/Bootcamp_Front-End/blob/main/HTML/Exercícios/Classificação_de_Personagens.js)
+- [1° Tarefa JS - Classificação de Personagens](https://github.com/EduardaDepetris/Bootcamp_Front-End/blob/main/JS/Exercícios/Classificação_de_Personagens.js)
 
-- [2° Tarefa JS - Gerenciamento de Equipes de Herois e Vilões](https://github.com/EduardaDepetris/Bootcamp_Front-End/blob/main/HTML/Exercícios/Gerenciamento_de_Equipes.js)
+- [2° Tarefa JS - Gerenciamento de Equipes de Herois e Vilões](https://github.com/EduardaDepetris/Bootcamp_Front-End/blob/main/JS/Exercícios/Gerenciamento_de_Equipes.js)
 
 - [3° Tarefa JS - Sistema de Estoque da Loja do Mestre dos Magos](https://github.com/EduardaDepetris/Bootcamp_Front-End/blob/main/JS/Exercícios/sistema_estoque.js)
 
