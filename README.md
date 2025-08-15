@@ -61,7 +61,7 @@ O objetivo é registrar o progresso no aprendizado e facilitar o acesso aos proj
 
 - [4° Desafio JS - Criando um Jogo de Cartas do Yu-Gi-Oh! com JavaScript e CSS](https://github.com/EduardaDepetris/Jogo-de-Cartas-do-Yu-Gi-Oh)
 
-- [5° Desafio JS - Publicando Seu Portfólio Profissional no GitHub Pages]() *A fazer*
+- [5° Desafio JS - Publicando Seu Portfólio Profissional no GitHub Pages](https://github.com/EduardaDepetris/js-developer-portfolio)
 
 ### JavaCript - Tarefas
 
@@ -73,13 +73,11 @@ O objetivo é registrar o progresso no aprendizado e facilitar o acesso aos proj
 
 - [4° Tarefa JS - Dicionário Mágico de Feitiços](https://github.com/EduardaDepetris/Bootcamp_Front-End/blob/main/JS/Exercícios/dicionario.js)
 
-- [5° Tarefa JS - Criador de Nomes de Dragões]() *A fazer*
+- [5° Tarefa JS - Criador de Nomes de Dragões](https://github.com/EduardaDepetris/Bootcamp_Front-End/blob/main/JS/Exercícios/Criador_nome.js)
 
-- [6° Tarefa JS - Contador de Cartas de Duelistas]() *A fazer*
+- [6° Tarefa JS - Contador de Cartas de Duelistas](https://github.com/EduardaDepetris/Bootcamp_Front-End/blob/main/JS/Exercícios/Contador_cartas.js)
 
 
 ## 📌 Observações
 
 - A ordem dos desafios segue a sequência do Bootcamp.
-- Projetos marcados como A fazer serão adicionados futuramente.
-- O repositório é atualizado periodicamente para registrar novos aprendizados.
